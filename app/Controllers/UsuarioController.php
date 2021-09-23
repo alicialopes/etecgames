@@ -135,11 +135,6 @@ class UsuarioController extends BaseController
         echo view('footer');
     }
 
-    public function formAlterar(){
-
-    }
-
-
     public function deletarUsuario($codusuario = null)
     {
         if (is_null($codusuario)) {
