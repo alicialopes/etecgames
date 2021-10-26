@@ -74,7 +74,6 @@ class UsuarioController extends BaseController
         $codUsuAlterar = $request->getPost('codUsuAlterar');
         $codUsuDel = $request->getPost('codUsuDel');
 
-
         if ($codUsuDel) {
             $this->deletarUsuario($codUsuDel);
             return redirect()->to(base_url('UsuarioController/listaCodUsuario/'));
